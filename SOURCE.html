@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{
+      background-color:#ffffcc;
+    }
+    ul{
+      word-spacing: 10px;
+      font-family: serif;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: right;
+      background-color: #ccffaa;
+      list-style-type: none;
+      
+      padding: 10px;
+    }
+    .active{
+      background-color:orange;
+      color:white;
+    }
+    .image{
+      position:absolute;
+      display:inline;
+      top:0px;
+      left:10px;
+      height:5rem;
+    }
+    .logo-div{
+      float:left;
+      display:inline;
+    }
+    .container{
+      position:relative;
+      width:100%;
+      
+    }
+    .container img {
+      width:  100%;
+      height:   550px;
+     margin-top:  -25px;
+    }
+    .container .btn{
+     position:absolute;
+     top:45%;
+     left:55%;
+     transform:translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     background-color: orange;
+     color: white;
+     font-size: 16px;
+     padding: 12px 24px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     text-align: center;
+    }
+    .container .btn:hover{
+      background-color:black;
+    }
+    *{
+      box-sizing: border-box;
+
+    }
+    .column{
+      float:left;
+      width:32%;
+      padding:0px;
+      margin:4px;
+      height:340px;
+
+    }
+    .row:after{
+      content:"";
+      display:table;
+      clear:both;
+    }
+    .solid{
+      border-style: solid;
+      height:340px;
+      
+      }  
+
+
+    li{
+      display:inline;
+    }
+  </style>
+</head>
+<body>
+  
+  <ul>
+  <div class="logo_div">
+    <a href="#"><img alt="logo" class="image" src="https://logos.textgiraffe.com/logos/logo-name/Ankita-designstyle-smoothie-m.png"></a>
+    </div>
+
+    <li><a href="#Home" class="active"> Home</a></li>
+    <li><a href="#About me">About me</a></li>
+    <li><a href="#Qualification">Qualificaton</a></li>
+    <li><a href="#Awards">Awards</a></li>
+    <li><a href="#Hobbies">Hobbies</a></li>
+  </ul>
+
+  <div class=" container">
+    <img src="  https://i.pinimg.com/564x/24/75/f6/2475f690dd181bb703d230317fedd250.jpg" >
+    <button class="btn">Read more</button>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#ccffaa;">
+      <div class="solid">
+      <h2>column 1</h2>
+      <p>.......</p>
+    </div>
+    </div>
+    <div class="column" style="background-color:orange;">
+      <div class="solid">
+      <h2>column 2</h2>
+      <p>......</p>
+    </div>
+    </div>
+    <div class="column" style="background-color:pink;">
+      <div class="solid">
+      <h2>column 3</h2>
+      <p>.......</p>
+    </div>
+    </div>
+</body>
+</html>
+    
+
+    
